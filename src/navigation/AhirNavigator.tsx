@@ -42,7 +42,7 @@ export const AhirNavigator: React.FC = () => {
           borderTopColor: koyuTema ? '#334155' : '#e2e8f0',
         },
       }}
-    >
+    >b
       <Tab.Screen name="HayvanlarSekmesi" options={{ title: 'Hayvanlar' }}>
         {() => <HayvanListesiScreen hayvanlar={hayvanlar} koyuTema={koyuTema} />}
       </Tab.Screen>
