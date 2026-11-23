@@ -1,0 +1,78 @@
+import { AsiKaydi, Hayvan } from '../types/ahir';
+
+export const BASLANGIC_HAYVANLAR: Hayvan[] = [
+  {
+    id: '1',
+    kupeNo: 'TR-06-00104',
+    ad: 'Sarıkız',
+    tur: 'İnek',
+    yasAy: 42,
+    agirlikKg: 540,
+    bolum: '1. Sağım Bölümü',
+    durum: 'Sağlıklı',
+    notlar: 'Günlük süt verimi düzenli, yem iştahı iyi.',
+  },
+  {
+    id: '2',
+    kupeNo: 'TR-06-00118',
+    ad: 'Pamuk',
+    tur: 'Buzağı',
+    yasAy: 4,
+    agirlikKg: 115,
+    bolum: 'Buzağı Büyütme',
+    durum: 'Aşı Bekliyor',
+    notlar: 'Şap aşısı takviminde görünüyor.',
+  },
+  {
+    id: '3',
+    kupeNo: 'TR-06-00209',
+    ad: 'Benekli',
+    tur: 'Koyun',
+    yasAy: 26,
+    agirlikKg: 68,
+    bolum: 'Küçükbaş Ağıl A',
+    durum: 'Tedavide',
+    notlar: 'Topallık kontrolü ve mineral takviyesi uygulanıyor.',
+  },
+  {
+    id: '4',
+    kupeNo: 'TR-06-00231',
+    ad: 'Kınalı',
+    tur: 'Keçi',
+    yasAy: 19,
+    agirlikKg: 52,
+    bolum: 'Küçükbaş Ağıl B',
+    durum: 'Sağlıklı',
+    notlar: 'Genel kondisyonu iyi, rutin kontrolde.',
+  },
+];
+
+export const BASLANGIC_ASILAR: AsiKaydi[] = [
+  {
+    id: 'a1',
+    hayvanId: '2',
+    kupeNo: 'TR-06-00118',
+    asiAdi: 'Şap Aşısı',
+    uygulamaTarihi: '2026-05-15',
+    sonrakiTarih: '2026-11-28',
+    tamamlandi: false,
+  },
+  {
+    id: 'a2',
+    hayvanId: '1',
+    kupeNo: 'TR-06-00104',
+    asiAdi: 'Brucella Aşısı',
+    uygulamaTarihi: '2026-08-10',
+    sonrakiTarih: '2027-02-10',
+    tamamlandi: true,
+  },
+  {
+    id: 'a3',
+    hayvanId: '3',
+    kupeNo: 'TR-06-00209',
+    asiAdi: 'Çiçek / Enterotoksemi',
+    uygulamaTarihi: '2026-09-01',
+    sonrakiTarih: '2026-12-05',
+    tamamlandi: false,
+  },
+];
